@@ -24,14 +24,23 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && apt-get install -y -q python-is-python3 libpython3-stdlib libxml2-dev libxslt-dev python3-pip
 
-RUN python -m pip install --upgrade pymavlink
+RUN python -m pip install --upgrade pymavlink mavproxy
 
 COPY --from=builder /ardupilot/Tools /ardupilot/Tools
 COPY --from=builder /ardupilot/Rover /ardupilot/Rover
 COPY --from=builder /ardupilot/build /ardupilot/build
 
 EXPOSE 5760/tcp
+EXPOSE 14540/udp
 
 WORKDIR /ardupilot/
 
-ENTRYPOINT /ardupilot/Tools/autotest/sim_vehicle.py --vehicle ${VEHICLE} -I${INSTANCE} --custom-location=${LAT},${LON},${ALT},${DIR} -w --frame ${MODEL} --no-rebuild --no-mavproxy --speedup ${SPEEDUP}
+ENTRYPOINT /ardupilot/Tools/autotest/sim_vehicle.py \
+            --vehicle ${VEHICLE} \
+            -I${INSTANCE} \
+            --custom-location=${LAT},${LON},${ALT},${DIR} \
+            -w \
+            --frame ${MODEL} \
+            --no-rebuild \
+            -m "--out=udp:127.0.0.1:14540" \
+            --speedup ${SPEEDUP}

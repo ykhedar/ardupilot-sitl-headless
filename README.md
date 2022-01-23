@@ -244,3 +244,158 @@ Options:
   --version             version information
   --default-modules=DEFAULT_MODULES
                         default module list
+
+
+
+SitlTest.
+  ActionHoverAsync
+  ActionHoverSyncDefault
+  ActionHoverSyncHigher
+  ActionHoverSyncLower
+  ActionTakeoffAndKill
+  ActionTransitionSync_standard_vtol
+  ActionGoto
+  ActionHold
+  FollowMeOneLocation
+  FollowMeMultiLocationWithConfig
+  GeofenceInclusion
+  Info
+  MissionUploadCancellation
+  MissionDownloadCancellation
+  MissionChangeSpeed
+  MissionAddWaypointsAndFly
+  MissionWithRTLHigh
+  MissionWithRTLLow
+  MissionWithRTLHigherAnyway
+  MissionRawMissionChanged
+  MissionRawImportAndFly
+  MissionSetCurrent
+  OffboardAccelerationNED
+  OffboardVelocityNED
+  OffboardVelocityBody
+  OffboardPositionNED
+  ParamSad
+  ParamHappy
+  SystemConnectionAsync
+  TelemetryAsync
+  TelemetryHealth
+  TelemetrySync
+  MavlinkPassthrough
+  MissionTransferLossy
+HardwareTest.
+  CalibrationGyro
+  CalibrationAccelerometer
+  CalibrationMagnetometer
+  CalibrationLevelHorizon
+  CalibrationGimbalAccelerometer
+  CalibrationGyroWithTelemetry
+  CalibrationGyroCancelled
+  LogFiles
+  LogFilesDownloadFailsIfPathIsDirectory
+  LogFilesDownloadFailsIfFileAlreadyExists
+CameraTest.
+  CaptureInfo
+  SetModeSync
+  SetModeAsync
+  ShowSettingsAndOptions
+  SetSettings
+  SubscribeCurrentSettings
+  SubscribePossibleSettings
+  Status
+  TakePhotoSingle
+  TakePhotosMultiple
+  TakePhotoInterval
+  Format
+ConnectionTest.
+  UdpListenOnDefaultPath
+  UdpListenOnExplicitPath
+SitlTestGimbal.
+  GimbalMove
+  GimbalAngles
+  GimbalTakeoffAndMove
+  GimbalROIOffboard
+SitlTestDisabled.
+  OffboardAttitudeRate
+  TelemetryGpsOrigin
+  TelemetryFlightModes
+FtpTest.
+  ListDirectory
+  DownloadFile
+  UploadFiles
+  TestServer
+SitlTestMultiple.
+  SystemMultipleComponents
+StatusTextTest.
+  TestServer
+
+
+
+[  FAILED  ] SitlTest.ActionHoverAsync
+[  FAILED  ] SitlTest.ActionHoverSyncDefault
+[  FAILED  ] SitlTest.ActionHoverSyncHigher
+[  FAILED  ] SitlTest.ActionHoverSyncLower
+[  FAILED  ] SitlTest.ActionTakeoffAndKill
+[  FAILED  ] SitlTest.ActionTransitionSync_standard_vtol
+[  FAILED  ] SitlTest.ActionGoto
+[  FAILED  ] SitlTest.ActionHold
+[  FAILED  ] SitlTest.FollowMeOneLocation
+[  FAILED  ] SitlTest.FollowMeMultiLocationWithConfig
+[  FAILED  ] SitlTest.Info
+[  FAILED  ] SitlTest.MissionUploadCancellation
+[  FAILED  ] SitlTest.MissionDownloadCancellation
+[  FAILED  ] SitlTest.MissionChangeSpeed
+[  FAILED  ] SitlTest.MissionAddWaypointsAndFly
+[  FAILED  ] SitlTest.MissionWithRTLHigh
+[  FAILED  ] SitlTest.MissionWithRTLLow
+[  FAILED  ] SitlTest.MissionWithRTLHigherAnyway
+[  FAILED  ] SitlTest.MissionRawMissionChanged
+[  FAILED  ] SitlTest.MissionRawImportAndFly
+[  FAILED  ] SitlTest.MissionSetCurrent
+[  FAILED  ] SitlTest.OffboardAccelerationNED
+[  FAILED  ] SitlTest.OffboardVelocityNED
+[  FAILED  ] SitlTest.OffboardVelocityBody
+[  FAILED  ] SitlTest.OffboardPositionNED
+[  FAILED  ] SitlTest.ParamSad
+[  FAILED  ] SitlTest.ParamHappy
+[  FAILED  ] SitlTest.TelemetryAsync
+[  FAILED  ] SitlTest.TelemetrySync
+[  FAILED  ] SitlTest.MavlinkPassthrough
+[  FAILED  ] SitlTest.MissionTransferLossy
+
+
+
+
+ActionHoverAsync
+  ActionHoverSyncDefault
+  ActionHoverSyncHigher
+  ActionHoverSyncLower
+  ActionTakeoffAndKill
+  ActionTransitionSync_standard_vtol
+  ActionGoto
+  ActionHold
+  FollowMeOneLocation
+  FollowMeMultiLocationWithConfig
+  GeofenceInclusion
+  Info
+  MissionUploadCancellation
+  MissionDownloadCancellation
+  MissionChangeSpeed
+  MissionAddWaypointsAndFly
+  MissionWithRTLHigh
+  MissionWithRTLLow
+  MissionWithRTLHigherAnyway
+  MissionRawMissionChanged
+  MissionRawImportAndFly
+  MissionSetCurrent
+  OffboardAccelerationNED
+  OffboardVelocityNED
+  OffboardVelocityBody
+  OffboardPositionNED
+  ParamSad
+  ParamHappy
+  SystemConnectionAsync
+  TelemetryAsync
+  TelemetryHealth
+  TelemetrySync
+  MavlinkPassthrough
+  MissionTransferLossy
